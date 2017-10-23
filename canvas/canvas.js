@@ -30,7 +30,7 @@ function setup() {
         ctx.clearRect(0,0,500,500)
         figur (ctx, xpos)
         xpos += vx;
-        if(xpos > 500){ 
+        if(xpos > 500){  
             vx = -2;
         }
         if(xpos < 100){
