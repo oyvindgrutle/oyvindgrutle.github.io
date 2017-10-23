@@ -1,0 +1,73 @@
+#main {
+position: relative;
+width: 800px;
+height: 600px;
+background: rgba(160,0,0,0.04);
+}
+
+#poeng {
+    position: absolute;
+    left: 810px;
+    top: 10px;
+    width: 6em;
+    height: 2em;
+    background-color: palegoldenrod;
+    color: darkolivegreen;
+    border-radius: 0.5em;
+    text-align: center;
+    padding-top: 0.8em;
+
+}
+ 
+.blink {
+background: green;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+}
+ 
+.sprite {
+position: absolute;
+}
+.sprite.hidden {
+display: none;
+}
+ 
+#kanon { 
+left: 10%;
+top: 10%;
+width: 50px;
+height: 26px;
+background: blue;
+}
+ 
+#kanon::after {
+content: "x";
+color:rgba(0,0,0,0);
+position: absolute;
+left: 7px;
+top: 3px;
+width: 19px;
+height: 18px;
+background-color: pink;
+}
+ 
+#kanon::before {
+content: ".";
+color:rgba(0,0,0,0);
+position: absolute;
+left: 23px;
+top: 11px;
+width: 27px;
+height: 3px;
+background-color: yellow;
+}
+ 
+#skudd {
+right: 10%;
+top: 10%;
+width: 10px;
+height: 10px;
+background: red;
+border-radius: 50%;
+}

@@ -1,0 +1,88 @@
+#main {
+    height: 700px;
+    width: 800px;
+    background-image: url("vei.png");
+    background-size: cover;
+    position: relative;
+} 
+#b1, #b2 {
+position: absolute;
+width: 30px;
+height: 60px;
+}
+
+#hus1, #hus2, #hus3, #hus4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    
+}
+
+   /* #b1 { right:260px; bottom: 20px; background: yellow;
+    }*/
+
+    #b2 { left: 260px;
+        position: absolute;
+        background-image: url("bil2.png");
+        background-size: cover;
+        animation: bevegelse 3s linear forwards;
+        transform: rotate(180deg);
+        
+    }
+
+    @keyframes bevegelse {
+        100% { top: 270px; }
+        0% { top:0px; }
+    }
+
+    #b1{
+        position: absolute;
+        /*background: red;*/
+        background-image: url("bil1.png");
+        background-size: contain;
+
+        animation: bevegelse2 3s linear forwards;
+        }
+
+        @keyframes bevegelse2 {
+            0% {right: 270px; bottom: 0px;}
+            40% {right: 270px; bottom: 280px;}
+            50% {right: 280px; bottom: 300px; transform: rotate(-5deg);}
+            55% {right: 310px; bottom: 310px; transform: rotate(-20deg);}
+            60% {right: 340px; bottom: 320px; transform: rotate(-30deg);}
+            65% {right: 370px; bottom: 330px; transform: rotate(-40deg);}
+            75% {right: 400px; bottom: 350px; transform: rotate(-50deg);}
+            80% {right: 430px; bottom: 360px; transform: rotate(-60deg);}
+            85% {right: 460px; bottom: 365px; transform: rotate(-70deg);}
+            90% {right: 480px; bottom: 375px; transform: rotate(-80deg);}
+            95% {right: 490px; bottom: 380px; transform: rotate(-85deg);}
+            99% {right: 500px; bottom: 385px; transform: rotate(-90deg);}
+            100% {right: 500px; bottom: 385px; transform: rotate(-90deg);}
+            
+        }
+         
+        #eksplosjon {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 490px;
+            bottom: 390px;
+            background-image: url("eksplosjon.gif");
+            background-size: cover;
+            animation: eksplosjon 3s linear forwards;
+        }
+        @keyframes eksplosjon {
+            0% { right:490px; bottom:390px; opacity: 0;}
+            90% { right:490px; bottom:390px; opacity: 0;}
+            95% { right:490px; bottom:390px;opacity: 0;}
+            99% { right:490px; bottom:390px; opacity: 1;}
+            100% { right:490px; bottom:390px; opacity: 0;}
+        }
+    
+    #hus1 { left:10px; top:20px; background-image:url("hus4.png"); background-size: cover;}
+    
+    #hus2 { left: 10px; bottom:20px; background-image:url("hus3.jpeg"); background-size: cover;}
+    
+    #hus3 { right: 10px; top: 20px; background-image:url("hus1.ico"); background-size: cover;}
+
+    #hus4 {right: 10px; bottom: 20px; background-image:url("hus2.ico"); background-size: cover;}
