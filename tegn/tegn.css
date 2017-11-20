@@ -1,0 +1,43 @@
+#main {
+    position: relative;
+}
+canvas {
+    position: absolute;
+    left: 127px;
+    border: solid green 2px;
+}
+
+#firkant, #sirkel, #trekant {
+    Width: 125px;
+    height: 125px;
+    background-color: darkgreen;
+    border: solid red 2px;
+    left: 0px;
+}
+
+#rod, #gronn, #bla {
+    top: 500px;
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    border: solid red 2px;
+
+}
+
+#rod {
+    left: 126px;
+    background-color: red;
+   
+}
+
+#gronn {
+    left: 252px;
+    background-color: green;
+   
+}
+
+#bla {
+    left: 378px;
+    background-color: blue;
+   
+}
