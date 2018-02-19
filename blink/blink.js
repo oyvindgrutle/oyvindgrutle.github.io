@@ -1,5 +1,25 @@
 // @flow
 
+/*
+@startuml
+
+title While Loop - Activity Diagram 
+
+
+start
+
+while (Hungry?)  is (Yes)
+  :Eat Hot Wings;
+  :Drink Homebrew;
+endwhile (No)
+
+:Go To Sleep;
+
+stop
+
+@enduml
+*/
+
 class Sprite {
     // div;x;y ....
     /*

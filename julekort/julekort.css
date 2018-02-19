@@ -1,0 +1,79 @@
+
+#main2 {
+    background-color: red;
+    height: 700px;
+    width: 1250px;
+  }
+  #main {
+    background-image: url("snowman.gif");
+    height: 700px;
+    width: 100px;
+    z-index: 1;
+    background-size: cover;
+} 
+
+    #santa {
+        position: absolute;
+        height: 150px;
+        width: 400px;
+        background-image: url("santa.png");
+        background-size: cover;
+        animation: bevegelse 5s infinite linear;
+        z-index: 3;
+        
+        
+    }
+
+    @keyframes bevegelse {
+        0% { top: 100px; left: 1200px }
+        100% { top:100px; left: -400px }
+    }
+
+    .pakke{
+        height: 40px;
+        width: 8px;
+        background-color: yellow;
+       border-left: solid 16px red;
+       border-right: solid 16px red;
+        }
+
+        body { background-color:#333; }
+        #snow{
+            background: none;
+            font-family: Androgyne;
+            background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index:2;
+            animation: snow 10s linear infinite;
+        }
+        @keyframes snow {
+          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+          50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+          100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+        }
+        #christmastree{
+            position: absolute;
+            top: 450px;
+            right: 1000px;
+            /*background: red;*/
+            height: 250px;
+            width: 250px;
+            background-image: url("christmastree.png") ;
+            background-size: contain;
+            background-repeat: no-repeat;
+            }
+            #merrychristmas{
+                position: absolute;
+                top: 200px;
+                right: 625px;
+                /*background: red;*/
+                height: 250px;
+                width: 250px;
+                background-image: url("merryc.gif") ;
+                background-size: contain;
+                background-repeat: no-repeat;
+                }
