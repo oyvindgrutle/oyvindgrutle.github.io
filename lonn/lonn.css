@@ -1,0 +1,17 @@
+#total {
+    background-color: gray;
+    height: 120px;
+    width: 200px;
+    border: solid 1px black;
+    overflow: scroll;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("pb.jpg");
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+
+}

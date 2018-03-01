@@ -2,34 +2,23 @@
 <html>
 
 <head>
-    <h1>Månedens lønn</h1>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="lonn.css">
+    <script src="liste.js"></script>
     <script src="lonn.js"></script>
 </head>
 
 <body>
-
     <div id="main">
-        <form id="skjema">
-            <br><label>Timer <input id="timer" type="number"> </label>
-            <label><button id="tid2lonn" type="button" > &#x2199; </button></label>
-            <p></p>
-            <br><label>Timer i helg <input id="timerihelg" type="number"> </label>
-            <p></p>
-            <br><label>Kveld <input id="kveldstillegg" type="number"> </label>
-            <p></p>
-            <br><label>Skatt <input id="skatt" type="number"> </label>
-            <p></p>
-            <br><label>Lønn <input id="lonn" type="number"> </label>
-            <label><button id="lonn2tid" type="button" > &#x2196; </button></label>
-            <p></p>
-           
-            
-            
-            
+       Timer <input type="number" id="timer">  <br>
+       Timer i helg <input type="number" id="timerihelg"><br>
+       Kveld <input type="number" id="kveld"><br>
+       <button type="button" id="beregn"> Beregn </button>
+       <div id="total"></div>
+       <div id="skatt"></div>
 
-        </form>
+
+
     </div>
     <script>
         setup();

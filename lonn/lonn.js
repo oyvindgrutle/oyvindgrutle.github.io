@@ -1,24 +1,38 @@
 function setup() {
     let inpTimer = document.getElementById("timer");
-    let inpLonn = document.getElementById("lonn");
     let inpTimerihelg = document.getElementById("timerihelg");
+    let inpKveld = document.getElementById("kveld");
+    let btnBeregn = document.getElementById("beregn");
+    let divTotal = document.getElementById("total");
 
-    let btntid2lonn = document.getElementById("tid2lonn");
-    btntid2lonn.addEventListener("click", tid2lonn);
+    btnBeregn.addEventListener("click", beregn);
 
-    let btnlonn2tid = document.getElementById("lonn2tid");
-    btnlonn2tid.addEventListener("click", lonn2tid);
+    let timelonn = 158.09;
+    let helgetillegg = 28;
+    let kveldstillegg = 10;
 
-    function tid2lonn(event) {
-        let timer = inpTimer.valueAsNumber;
-        let timerihelg = inpTimerihelg *28;
-        let lonn = timer * 149.38;
-        inpLonn.value = (lonn.toFixed(2));
+    function beregn() {
+
+        let antallTimer = inpTimer.valueAsNumber;
+        let antallTimerihelg = inpTimerihelg.valueAsNumber;
+        let antallKveld = inpKveld.valueAsNumber;
+
+        let a = antallTimer*timelonn;
+        let b = antallTimerihelg*helgetillegg;
+        let c = antallKveld*kveldstillegg;
+        let total = a+b+c;
+        let avrunda = Math.round(total/100)*100;
+
+        let skatt = liste[avrunda];
+
+        if(antallTimer < antallTimerihelg || antallTimer < antallKveld || antallTimer < (antallKveld+antallTimerihelg)){
+            divTotal.innerHTML = "KA HOLDE DU PÅ MED, DU KAN IKKJE JOBBA FLERRE TIMAR I HELG ELLER KVELD ENN DET DU HAR JOBBA TOTALT!!! TAPAR"
+        } else {
+            divTotal.innerHTML = "Du min unge mann, denne måneden har du gjort deg fortjent til " + total.toFixed(2)+"kr. Godt jobbet. Du blir trekt " + skatt +"kr i skatt. Du får da " + (total-skatt) + "kr til lønnskonto."  ;
+
+        }
+
     }
-    function lonn2tid(event) {
-        let lonn = inpLonn.valueAsNumber;
-        let timer = lonn / 149.38;
-        inpTimer.value = (timer.toFixed(2));
-    }
+
 
 }
