@@ -33,7 +33,7 @@ function setup() {
         if(antallTimer < antallTimerihelg || antallTimer < antallKveld || antallTimer < (antallKveld+antallTimerihelg)){
             divTotal.innerHTML = "KA HOLDE DU PÅ MED, DU KAN IKKJE JOBBA FLERRE TIMAR I HELG ELLER KVELD TESAMMEN ENN DET DU HAR JOBBA TOTALT!!! TAPAR"
         } else {
-            divTotal.innerHTML = "Du min unge mann, denne måneden har du gjort deg fortjent til " + total.toFixed(2)+"kr. Godt jobbet. Du blir trekt " + skatt +"kr i skatt. Du får da " + (total-skatt) + "kr til lønnskonto."  ;
+            divTotal.innerHTML = "Du min unge mann, denne måneden har du gjort deg fortjent til " + total.toFixed(2)+"kr. Godt jobbet. Du blir trekt " + skatt +"kr i skatt. Du får da " + (total-skatt).toFixed(2) + "kr til lønnskonto."  ;
 
         }
 
