@@ -10,6 +10,7 @@ function setup() {
     let timelonn = 158.09;
     let helgetillegg = 28;
     let kveldstillegg = 10;
+    //let skattprosent = 0.05;
 
     function beregn() {
 
@@ -27,7 +28,7 @@ function setup() {
         let skatt = liste[avrunda];
 
         //skatt på 5%
-        //let skatt = (total * 0.05);
+        //let skatt = (total * skattprosent).toFixed(2);
 
         if(antallTimer < antallTimerihelg || antallTimer < antallKveld || antallTimer < (antallKveld+antallTimerihelg)){
             divTotal.innerHTML = "KA HOLDE DU PÅ MED, DU KAN IKKJE JOBBA FLERRE TIMAR I HELG ELLER KVELD TESAMMEN ENN DET DU HAR JOBBA TOTALT!!! TAPAR"
