@@ -4,6 +4,7 @@
     width: 200px;
     border: solid 1px black;
     overflow: scroll;
+    top: 200px;
 }
 
 #main {
@@ -14,4 +15,11 @@
     position: absolute;
     background-repeat: no-repeat;
 
+}
+
+
+#inputs div {
+    max-width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }

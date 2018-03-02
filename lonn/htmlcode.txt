@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lonn.css">
+    <script src="liste.js"></script>
+    <script src="lonn.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="inputs">
+            <div>
+                <div>Timer</div>
+                <div>
+                    <input type="number" id="timer">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>Timer i helg</div>
+        <div>
+            <input type="number" id="timerihelg">
+        </div>
+        <br> Kveld
+        <input type="number" id="kveld">
+        <br>
+        <button type="button" id="beregn"> Beregn </button>
+    </div>
+    <div id="total"></div>
+    <div id="skatt"></div>
+
+
+
+    </div>
+    <script>
+        setup();
+
+    </script>
+</body>
+
+</html>

@@ -13,6 +13,8 @@ function setup() {
 
     btnNextMonth.addEventListener("click", nextMonth);
     btnPrevMonth.addEventListener("click", prevMonth);
+    btnNextYear.addEventListener("click", nextYear);
+    btnPrevYear.addEventListener("click", prevYear);
 
     let arrDato = [];
 
@@ -35,6 +37,17 @@ function setup() {
             div.innerHTML = String(d);
             divDatoer.appendChild(div);
         }
+    }
+
+    function nextYear(e) {
+        minDato.year ++;
+        
+        visMonth(minDato);
+    }
+
+    function prevYear(e) {
+        minDato.year --;
+        visMonth(minDato);
     }
 
     function nextMonth(e) {
@@ -64,6 +77,9 @@ function setup() {
     };
 
     function visMonth(dato)  {
+        // trenger å vite hvilke dag 1. av denne måneden er
+        let d = new Date(`${dato.year}/${dato.month}/1`);
+        let start = (d.getDay() + 6) % 7;
         let mNavn = "Januar,Februar,Mars,April,Mai,Juni,Juli,August,September,Oktober,November,Desember".split(",");
         let mLength = [31,28,31,30,31,30,31,31,30,31,30,31]
         spanYear.innerHTML = String(dato.year);
@@ -74,7 +90,8 @@ function setup() {
             div.classList.add("hidden");
         }
         for (let i=0; i < lengde; i++) {
-            let div = arrDato[i];
+            let div = arrDato[i+start];
+            div.innerHTML = String(i + 1);
             div.classList.remove("hidden");
         }
     }

@@ -1,0 +1,31 @@
+#kart {
+    background-image: url("kart.gif");
+    background-position: center;
+    background-size: contain;
+    width: 599px;
+    height: 735px;
+}
+
+#fredrikstad, #halden {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 200, 0.5);
+    position: absolute;
+}
+
+#fredrikstad {
+    top: 510px;
+    left: 180px;
+}
+
+#halden {
+    top: 553px;
+    left: 328px;
+}
+
+#haldvideo.hidden,
+.hidden {
+    opacity:0;
+    z-index:-1;
+}
