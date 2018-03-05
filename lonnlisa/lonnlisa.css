@@ -24,16 +24,16 @@
     grid-template-columns: 1fr 2fr;
 }
 
-#pizza {
+#girl {
     position: absolute;
-    background-image: url("girl.gif");
-    height: 320px;
-    width: 270px;
+    background-image: url("girl2.gif");
+    height: 240px;
+    width: 250px;
     background-repeat: no-repeat;
     animation: bevegelse 4s linear infinite;
 }
 
 @keyframes bevegelse {
-    100% { top: 270px; left: 100vw; }
-    0% { top:270px; left: -270px; }
+    100% { top: 200px; left: 100vw; }
+    0% { top:200px; left: -270px; }
 }
