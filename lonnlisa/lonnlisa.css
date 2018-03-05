@@ -1,0 +1,39 @@
+#total {
+    background-color: gray;
+    height: 120px;
+    width: 200px;
+    border: solid 1px black;
+    overflow: scroll;
+    top: 200px;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("gina.jpg");
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+
+}
+
+
+#inputs div {
+    max-width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#pizza {
+    position: absolute;
+    background-image: url("girl.gif");
+    height: 320px;
+    width: 270px;
+    background-repeat: no-repeat;
+    animation: bevegelse 4s linear infinite;
+}
+
+@keyframes bevegelse {
+    100% { top: 270px; left: 100vw; }
+    0% { top:270px; left: -270px; }
+}
