@@ -2,13 +2,13 @@
 <html>
 
 <head>
-        <style>
-                img {
-                    max-width: 100%;
-                }
-                </style>
-                <title>Lønningskalkulator</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+            max-width: 100%;
+        }
+    </style>
+    <title>Lønningskalkulator</title>  <!-- Gjør at nettsiden er mer brukervennlig for mobil -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør at nettsiden er mer brukervennlig for mobil -->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="lonn.css">
     <script src="liste.js"></script>
@@ -17,12 +17,19 @@
 
 <body>
     <div id="main">
-       Timer <input type="number" id="timer">  <br>
-       Timer i helg <input type="number" id="timerihelg"><br>
-       Kveld <input type="number" id="kveld"><br>
-       <button type="button" id="beregn"> Beregn </button>
-       <div id="total"></div>
-       <div id="skatt"></div>
+        <label>Timer</label>
+        <input type="number" id="timer" placeholder="Timer">
+        <br>
+        <label>Timer i helg</label>
+        <input type="number" id="timerihelg" placeholder="Timer i helg">
+        <br>
+        <label>Kveld</label>
+        <input type="number" id="kveld" placeholder="Timer kveld">
+        <br>
+        <button type="button" id="beregn"> Beregn </button>
+        <div id="total"></div>
+        <div id="skatt"></div>
+        <div id="pizza"></div>
 
 
 
