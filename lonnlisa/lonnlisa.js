@@ -24,7 +24,7 @@ function setup() {
     //skatt hentet fra tabell 7100, egen liste liste.js
     let skatt = liste[avrunda];
 
-    divTotal.innerHTML = "Den dumme tyskeren tjener " + total.toFixed(2) + "kr denne måneden." + "Du må betale " + skatt + "kr i skatt. Du får da " + (total.toFixed(2) - skatt) + "kr til lønnskonto."
+    divTotal.innerHTML = "Lisa Martine Ott aka den hyggelige tyskeren tjener denne måneden " + total.toFixed(2) + "kr denne måneden." + " Du må betale " + skatt + "kr i skatt. Du får da " + (total.toFixed(2) - skatt) + "kr til lønnskonto."
 
 
     
