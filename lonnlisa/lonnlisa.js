@@ -4,10 +4,12 @@ function setup() {
   let divTotal = document.getElementById("total");
   let btnEyecandy = document.getElementById("eyecandy");
   let btnMerEyecandy = document.getElementById("mereyecandy");
+  let btnMerEyecandy2 = document.getElementById("mereyecandy2");
 
   btnBeregn.addEventListener("click", beregn); //funksjonen beregn blir kjørt når knappen beregn blir trykket på
   btnEyecandy.addEventListener("click", visEyecandy);
   btnMerEyecandy.addEventListener("click", visMerEyecandy);
+  btnMerEyecandy2.addEventListener("click", visMerEyecandy2);
 
   let timelonn = 156.78;
 
@@ -36,6 +38,10 @@ function setup() {
 
   function visMerEyecandy() {
     window.open("fly.m4v", "_blank", "resizeable=yes, width=600, height=400");
+  }
+
+  function visMerEyecandy2() {
+    window.open("mmm.jpg", "_blank", "resizeable=yes, width=600, height=400");
   }
 
 
