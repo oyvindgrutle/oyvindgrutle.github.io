@@ -41,7 +41,7 @@ function setup() {
   }
 
   function visMerEyecandy2() {
-    window.open("mmm.jpg", "_blank", "resizeable=yes, width=600, height=400");
+    window.open("mm.jpg", "_blank", "resizeable=yes, width=600, height=400");
   }
 
 
