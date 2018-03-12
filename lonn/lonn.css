@@ -30,7 +30,7 @@
     height: 320px;
     width: 270px;
     background-repeat: no-repeat;
-    animation: bevegelse 4s linear infinite;
+    animation: bevegelse 30s linear infinite;
 }
 
 @keyframes bevegelse {
