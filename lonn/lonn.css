@@ -37,3 +37,7 @@
     100% { top: 270px; left: 100vw; }
     0% { top:270px; left: -270px; }
 }
+
+.hidden {
+    opacity: 0;
+}

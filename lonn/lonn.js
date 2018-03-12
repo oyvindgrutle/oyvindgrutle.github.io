@@ -6,16 +6,29 @@ function setup() {
     let divTotal = document.getElementById("total");
     let inpProsent = document.getElementById("prosent");
     let inpTabell = document.getElementById("tabell")
+    let inpProsentVerdi = document.getElementById("prosentverdi");
 
     btnBeregn.addEventListener("click", beregn); //funksjonen beregn blir kjørt når knappen beregn blir trykket på
 
     let timelonn = 158.09;
     let helgetillegg = 28;
     let kveldstillegg = 10;
-    let skattprosent = 0.05;
+
+
+    inpTabell.addEventListener("click", brukProsent);
+    inpProsent.addEventListener("click", brukTabell);
+
+    function brukProsent() {
+        inpProsentVerdi.classList.remove("hidden");
+    }
+
+    function brukTabell() {
+        inpProsentVerdi.classList.add("hidden");
+    }
 
     function beregn() {
 
+        let skattprosent = (inpProsentVerdi.valueAsNumber / 100);
         let antallTimer = inpTimer.valueAsNumber;
         let antallTimerihelg = inpTimerihelg.valueAsNumber;
         let antallKveld = inpKveld.valueAsNumber;
