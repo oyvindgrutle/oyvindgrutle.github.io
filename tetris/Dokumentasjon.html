@@ -65,8 +65,95 @@
                 sjekk kollisjon
             </code>
          </pre>
-    </article>
+         <h4>Flytdiagram</h4>
+         <pre>
+         <code>
+         @startuml
 
+title While Loop - Activity Diagram 
+
+
+start
+
+while (Brett ikke fylt?)  is (Nei)
+  :Lag ny Brikke;
+  :Aktiver brikke;
+  :Styr brikke;
+  :Beregn poeng;
+endwhile (Ja)
+
+:Vis poeng;
+
+stop
+
+@enduml
+</code>
+</pre>
+
+<h4>Usecases</h4>
+<pre>
+    <code>
+       @startuml
+
+Employee -up-|> User
+Client -up-|> User
+Supervisor -up-|> User
+Employee --> (Login)
+Supervisor --> (Login)
+Client ..> (Login) : NO!!!!
+Supervisor --> (Create / Delete User): I am god
+
+@enduml
+    </code>
+</pre>
+    </article>
+<h2>Testing</h2>
+<h3>Testspesifikasjon</h3>
+<h4>Test av krav</h4>
+<ul>
+    <li>Vi skal ha tetrominoene IOJLTSZT</li>
+    <p>
+        Lager tester som sjekker at koden får laget
+        de forskjellige tetrominoene på riktig måte
+        <p>
+            Under er et eksempel på tester, men de er ikke implementert
+            (tidsnød).
+        </p>
+        <pre><code>
+            let tetroT = new Tetroino(" *,*** ");
+            assert(tetroI.cells[0] [0] [0] === 0); - stemmer
+        </code></pre>
+    </p>
+    <li>Hver tetromino skal ha sin distinkte farge</li>
+    <pre><code>
+        assert(tetroT.color = "blue"); - stemmer
+    </code></pre>
+    <li>Poengviser oppe til høyre - 
+    visuell inspeksjon av skjema</li>
+    <li>Forhåndsvisning av neste brikke - 
+    ditto</li>
+    <li>Spillet er over når neste brikke ikke får plass
+    -  må testes av spiller</li>
+    <li>Hastigheten skal øke for hver 10 linje
+         - testes av betaspiller
+    </li>
+
+    tester brukervennlighet - 
+
+</ul>
+
+<h4>Test av grenser</h4>
+<ul>
+    <li>Test at brikkene er sperra inne i brettet - skal ikke kunne 
+        flytte forbi høyre/venstre kant
+    </li>
+    <li>Test at rotasjon er logisk
+        Pil opp roterer
+    </li>
+    <li>Test at vi får poeng for fulle linjer</li>
+    <li>Test at spillet stopper når brettet er fullt</li>
+    
+</ul>
 </body>
 
 </html>

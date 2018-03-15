@@ -5,11 +5,13 @@ function setup() {
   let btnEyecandy = document.getElementById("eyecandy");
   let btnMerEyecandy = document.getElementById("mereyecandy");
   let btnMerEyecandy2 = document.getElementById("mereyecandy2");
+  let btnSundEyecandy = document.getElementById("sundeyecandy");
 
   btnBeregn.addEventListener("click", beregn); //funksjonen beregn blir kjørt når knappen beregn blir trykket på
   btnEyecandy.addEventListener("click", visEyecandy);
   btnMerEyecandy.addEventListener("click", visMerEyecandy);
   btnMerEyecandy2.addEventListener("click", visMerEyecandy2);
+  btnSundEyecandy.addEventListener("click", visSundEyecandy);
 
   let timelonn = 156.78;
 
@@ -43,6 +45,11 @@ function setup() {
   function visMerEyecandy2() {
     window.open("mm.jpg", "_blank", "resizeable=yes, width=600, height=400");
   }
+
+  function visSundEyecandy() {
+    window.open("eyecandysund.jpg", "_blank", "resizeable=yes, width=600, height=400");
+  }
+
 
 
 } 
