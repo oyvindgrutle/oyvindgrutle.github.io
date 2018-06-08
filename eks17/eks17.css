@@ -1,0 +1,116 @@
+#main {
+    width: 800px;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("bgpicture2.gif");
+    
+}
+
+#hus {
+    width: 400px;
+    height: 400px;
+    background-image: url("hus.gif");
+    position: absolute;
+    top: 140px;
+    left: 577px;
+    
+}
+
+#tre {
+    width: 200px;
+    height: 200px;
+    background-image: url("tre3.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 297px;
+    left: 414px;
+    transform: rotate(0deg);
+    transform-origin: 83px 188px;
+}
+
+#blader {
+    position: absolute;
+    background-color: green;
+}
+
+#vindmolle {
+    width: 400px;
+    height: 600px;
+    background-image: url("vindmolle.png");
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+
+
+
+
+
+#molle {
+    width: 400px;
+    height: 600px;
+    background-image: url("molle.gif");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform-origin: 176px 226px;
+    
+}
+
+#center {
+    width: 2px;
+    height: 2px;
+    left: 176px;
+    top:226px;
+    position: absolute;
+    background-color: red;
+}
+
+/*#center2 {
+    width: 2px;
+    height: 2px;
+    left: 176px;
+    top:226px;
+    position: absolute;
+    background-color: red;
+} */
+
+.stille {
+
+}
+
+.bris {
+    animation: turn 3s infinite linear;
+}
+
+.kuling {
+    animation: turn 0.0001s infinite linear;
+}
+
+@keyframes turn {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes vind {
+    0% {left:414px;}
+    50% {left: 414px; transform: rotate(15deg);}
+    100% {left: 414px;}
+}
+
+@keyframes myevind {
+    0% {left:414px;}
+    50% {left: 414px; transform: rotate(30deg);}
+    100% {left: 414px;}
+}
+
+#melding {
+    position: relative;
+    left: 20px;
+    top: 100px;
+}
+

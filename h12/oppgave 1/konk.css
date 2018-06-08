@@ -1,0 +1,31 @@
+
+#bilde {
+    top: 0;
+    left: 300px;
+    background-image: url("skinke.png");
+    width: 440px;
+    height: 200px;;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: rotate(0deg);
+    
+}
+
+.lite {
+    animation: formye 2s linear;
+}
+
+.mye {
+    animation: forlite 2s linear;
+}
+
+@keyframes formye {
+    50% {transform: rotate(-25deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes forlite {
+    50% {transform: rotate(25deg);}
+    100% {transform: rotate(0deg);}
+}

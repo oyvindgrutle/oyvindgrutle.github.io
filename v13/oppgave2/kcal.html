@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="kcal.css">
+    <script src="kcal.js"></script>
+</head>
+
+<body>
+    <h2>BMR Helvete</h2>
+    <div id="main">
+       Vekt: <input id="vekt" placeholder="Vekt">
+       <br>
+       Velg aktivitet <select name="aktivitet" id="aktivitet">
+           <option>Velg aktivitet</option>
+           <option value="1.2">Sitte</option>
+           <option value="1.4">Gå tur</option>
+       </select>
+        <button type="button" id="beregn">Beregn</button>
+        <button type="button" id="beregnenergi">Beregn energiforbruk</button>
+<div id="visbmr"></div>
+<div id="visenergi"></div>
+    </div>
+    <script>
+        setup();
+
+    </script>
+</body>
+
+</html>

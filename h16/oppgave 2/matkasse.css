@@ -1,0 +1,19 @@
+#middager {
+    width: 300px;
+}
+
+.tomiddager {
+    background-image: url("to.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+}
+
+.tremiddager {
+    width: 400px;
+    height: 400px;
+    background-image: url("tre.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}

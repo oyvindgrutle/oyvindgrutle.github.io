@@ -2,6 +2,7 @@ function setup() {
     let inpTimer = document.getElementById("timer");
     let inpTimerihelg = document.getElementById("timerihelg");
     let inpKveld = document.getElementById("kveld");
+    let inpHellig = document.getElementById("hellig");
     let btnBeregn = document.getElementById("beregn");
     let divTotal = document.getElementById("total");
     let inpProsent = document.getElementById("prosent");
@@ -13,6 +14,7 @@ function setup() {
     let timelonn = 158.09;
     let helgetillegg = 28;
     let kveldstillegg = 10;
+    let hellig = timelonn;
 
 
     inpTabell.addEventListener("click", brukProsent);
@@ -32,11 +34,13 @@ function setup() {
         let antallTimer = inpTimer.valueAsNumber;
         let antallTimerihelg = inpTimerihelg.valueAsNumber;
         let antallKveld = inpKveld.valueAsNumber;
+        let antallHellig = inpHellig.valueAsNumber;
 
         let a = antallTimer * timelonn;
         let b = antallTimerihelg * helgetillegg;
         let c = antallKveld * kveldstillegg;
-        let total = a + b + c;
+        let d = antallHellig * hellig;
+        let total = a + b + c + d;
 
 
         let skatt;
@@ -55,7 +59,7 @@ function setup() {
         //let skatt = (total * skattprosent).toFixed(2);
 
         // if setning som sier at antall timer i helg og kveld til sammen ikke kan være større enn antall timer
-        if (antallTimer < antallTimerihelg || antallTimer < antallKveld || antallTimer < (antallKveld + antallTimerihelg)) {
+        if (antallTimer < antallTimerihelg || antallTimer < antallKveld || antallTimer < antallHellig || antallTimer < (antallKveld + antallTimerihelg + antallHellig)) {
             divTotal.innerHTML = "NB! Antall timer i helg og kveld til sammen kan ikke være større enn antall timer totalt. Antall timer denne måneden er satt til " 
             + antallTimer + ". Timer i helg og kveld til sammen er " 
             + (antallTimerihelg + antallKveld) + "."

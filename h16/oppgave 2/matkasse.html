@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="matkasse.css">
+    <script src="matkasse.js"></script>
+    <title>Butikk</title>
+</head>
+
+<body>
+    <!--
+ Skriv en programkode for en rutine der en bruker på nett skal kunne bestille et valgfritt 
+antall klesplagg som er lagt ut for salg. Dersom kunden handler for mer enn 1000 kr, skal 
+han/hun kunne få et valgfritt plagg for halv pris. Rutinen skal skrive en ordrebekreftelse og 
+den samlede prisen for ordren på skjermen. Du trenger ikke programmere løsningen for å 
+sende bestillingen til butikken, men den programmerte rutinen skal sjekke at kunden har 
+bestilt minst ett plagg, og oppgitt navn og adresse på seg selv. Legg inn egne forutsetninger 
+for programkoden om du mener det er nødvendig. 
+    -->
+
+    <div id="kunde">
+        <form>
+            <div>
+                <label for="navn">Navn:
+                    <input type="text" id="navn" placeholder="Navn">
+                </label>
+            </div>
+            <div>
+                <label for="adresse">Adresse:
+                    <input type="text" id="adresse" placeholder="Navn">
+                </label>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div id="vareliste">
+        <div>
+
+            <label> Antall personer
+                <input id="antallpers" data-pris="80" type="number" placeholder="Antall personer">
+            </label>
+        </div>
+        <p>
+    
+            <select name="antallmiddager" id="antallmiddager">
+                <option>Velg hvor mange middager</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <button id="kjop">Kjøp varene</button>
+
+            <div id="prisvis">
+
+            </div>
+
+            <div id="middager"></div>
+
+    </div>
+
+    <script>
+        setup();
+    </script>
+
+
+</body>
+
+</html>

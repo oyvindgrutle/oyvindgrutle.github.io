@@ -1,0 +1,34 @@
+#alternativ {
+    top:200px;
+}
+
+#video {
+    top: 100px;
+}
+
+.sporsmal1, .sporsmal2, .sporsmal3, .sporsmal4 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    width: 300px;
+    height: 300px;
+
+}
+
+.sporsmal1 {
+    background-image: url("image1.png");
+}
+
+.sporsmal2 {
+    background-image: url("image6.png");
+}
+
+.sporsmal3 {
+    background-image: url("image8.png");
+}
+
+.sporsmal4 {
+    background-image: url("image4.png");
+}

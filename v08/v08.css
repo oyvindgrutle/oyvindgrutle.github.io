@@ -1,0 +1,10 @@
+#produkt, #produkt1, #produkt2, #produkt3, #produkt4 {
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet;
+}
+
+#form2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

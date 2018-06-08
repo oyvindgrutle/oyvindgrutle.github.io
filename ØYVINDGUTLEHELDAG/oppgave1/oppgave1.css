@@ -1,0 +1,28 @@
+#bildeA, #bildeB, #bildeC {
+    width: 200px;
+    height: 200px;
+    left: 0px;
+    top: 50px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#bildeA {
+    background-image: url("image1.png");
+}
+
+#bildeB {
+    background-image: url("image2.png");
+    left: 220px;
+}
+
+#bildeC {
+    background-image: url("image3.png");
+    left: 440px;
+}
+
+#knapp {
+    position: absolute;
+    top: 170px;
+}

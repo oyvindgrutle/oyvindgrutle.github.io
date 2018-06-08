@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="vindtest.css">
+    <script src="Test.js"></script>
+</head>
+
+<body>
+
+<div id="resultat"></div>
+
+    <script>
+        function kraft(vind) {
+            if ( vind < 2.5) return 0;
+            if ( vind < 3.4) return 2;
+            if ( vind < 5.5) return 10;
+            if ( vind < 8) return 60;
+            if ( vind < 10.8) return 150;
+            if ( vind < 13.9) return 400;
+            if ( vind < 15) return 500;
+            return 0;
+        }
+
+        expect(kraft,0).to.be(0);
+        expect(kraft,3).to.be(2);
+        expect(kraft,19).to.be(0);
+        expect(kraft,14.3).to.be(501);
+        Test.summary("#resultat");
+
+    </script>
+</body>
+
+</html>
