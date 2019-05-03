@@ -6,7 +6,7 @@ function setup() {
     let btnBeregn = document.getElementById("beregn");
     let divTotal = document.getElementById("total");
     let inpProsent = document.getElementById("prosent");
-    let inpTabell = document.getElementById("tabell")
+    let inpTabell = document.getElementById("tabell");
     let inpProsentVerdi = document.getElementById("prosentverdi");
 
     btnBeregn.addEventListener("click", beregn); //funksjonen beregn blir kjørt når knappen beregn blir trykket på
